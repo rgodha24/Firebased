@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Club</title>
+
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.16.1/firebase-firestore.js"></script>
+
+    <script src="app.js" defer></script>
+
+    <!--
+        HOW TO SERVE:   firebase serve --only hosting
+        HOW TO DEPLOY:  firebase deploy --only hosting:math-club-53f23
+        RUN THESE COMMANDS IN TERMINAL
+    -->
+
+</head>
+<body>
+
+    <h1>Math Club</h1>
+
+    <a href="https://artofproblemsolving.com">Art of Problem Solving</a>
+    
+    <section id="whenSignedOut">
+
+        <br>
+
+        <button id="signInBtn" onclick="signIn()">Sign in with Google</button>
+    
+    </section>
+
+    <section id="whenSignedIn" hidden="true">
+
+        <p id="user"></p>
+
+        <p>What do you want to say to chat?</p>
+
+        <input id="box" type="text"></input>
+
+        <p>Press enter to submit</p>
+
+        <ul id="messages"></ul>
+        
+        <button id="signOutBtn" onclick="sigOut()">Sign Out</button>
+    
+    </section>
+      
+</body>
