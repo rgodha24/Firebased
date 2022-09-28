@@ -1,5 +1,14 @@
 {
   "dependencies": {
     "firebase": "^9.9.4"
+  },
+  "devDependencies": {
+    "vite": "^3.1.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "serve": "vite preview",
+    "deploy": "vite build && firebase deploy"
   }
 }
